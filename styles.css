@@ -216,7 +216,6 @@ body.fade-out {
 .ttt {
     width: 400px;
     height: 400px;
-    /* border: 1px solid var(--border-line-color); */
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, calc(133px - 20px));
@@ -236,7 +235,6 @@ body.fade-out {
 .stats {
     margin: 0 auto;
     width: 450px;
-    /* border: 1px solid var(--border-line-color); */
     display: grid;
     grid-template-columns: repeat(3, calc(153px - 20px));
     grid-template-rows: calc(88px - 10px);
@@ -343,4 +341,8 @@ body.fade-out {
 .modal-content .quit-btn:hover, .modal-content .restart-btn:hover {
     color: rgba(0, 0, 0, 0.75);
     background-color: rgba(255, 255, 255, 0.75);
+}
+
+.ttt .cell:hover {
+    background-color: var(--bg-color-inside);
 }

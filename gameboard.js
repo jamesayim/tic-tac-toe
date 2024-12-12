@@ -4,15 +4,6 @@ setTimeout(() => {
 
 const allSmallDivs = document.querySelectorAll(".cell");
 
-allSmallDivs.forEach(cell => {
-    cell.addEventListener("mouseover", () => {
-        cell.style.cssText = `background-color: var(--bg-color-inside);`;
-    });
-    cell.addEventListener("mouseout", () => {
-        cell.style.cssText = "";
-    });
-});
-
 const playerMarkg = localStorage.getItem("playerMark");
 if (!playerMarkg) {
     alert("Please select a mark first.");
@@ -235,7 +226,7 @@ const App = (() => {
             UIController.highlightWinningLine(winningLine, winner.winner);
             }
 
-        setTimeout(() => UIController.showWinnerModal(winner), 1500);
+        setTimeout(() => UIController.showWinnerModal(winner), 1300);
             return;
         };
 
@@ -310,7 +301,7 @@ const App = (() => {
         GameController.setCurrentPlayer(GameController.userMark);
         UIController.renderBoard();
         UIController.displayTurn(GameController.getCurrentPlayer());
-        UIController.resetLineColor
+        UIController.resetLineColor();
   
         // CPU start if it's its turn
         if (GameController.getCurrentPlayer() === GameController.cpuMark) {

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="mark-selection.js" defer></script>
+</head>
+<body>
+    <div class="xo">
+        <img height="42px" width="42px" src="assets/x-icon.png" alt="letter x icon">
+        <img height="36px" width="36px" src="assets/o-icon.png" alt="letter o icon">
+    </div>
+    <div class="choose">
+        <p>PICK YOUR MARK</p>
+        <div class="slider-toggle">
+            <input type="radio" name="toggle" id="option-x" checked/>
+            <input type="radio" name="toggle" id="option-o" />
+            <div class="slider">
+                <label for="option-x"><img class="toggle-x" height="42px" width="42px" src="assets/x-icon.png" alt="letter x icon"></label>
+                <label for="option-o"><img class="toggle-o" height="36px" width="36px" src="assets/o-icon.png" alt="letter o icon"></label>
+                <div class="button"></div>
+            </div>
+        </div>
+        <p>REMEMBER: X GOES FIRST</p>
+    </div>
+    <div class="start-game">
+        <button id="start-game-btn" type="button">New Game (vs CPU)</button>
+    </div>
+</body>
+</html>
